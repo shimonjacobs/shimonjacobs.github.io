@@ -1,13 +1,67 @@
-<!doctype HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
   <header>
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <body>
-  <h1>Welcome to my page</h1>
-  <div>
-    <a href="https://www.linkedin.com/in/shimon-jacobs/">LinkedIn</a>
-    <h3> CV </h3>
-    
-    <div>
-      </body>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I'm [Your Name]</h2>
+      <p>I design and build thoughtful, modern web experiences.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3>Featured Projects</h3>
+      <div class="project-list">
+        <div class="project">
+          <h4>Project One</h4>
+          <p>Short description of your project. <a href="project1.html">Read more</a></p>
+        </div>
+        <div class="project">
+          <h4>Project Two</h4>
+          <p>Short description of your project. <a href="project2.html">Read more</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>A brief introduction about you, your background, and what you’re passionate about.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contact</h3>
+      <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>

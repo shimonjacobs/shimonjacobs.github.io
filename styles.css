@@ -12,6 +12,10 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 90%;
   max-width: 1000px;

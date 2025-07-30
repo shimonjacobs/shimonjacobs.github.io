@@ -9,14 +9,16 @@
 </head>
 
   <script>
-  document.querySelectorAll('.zoom-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const url = this.href;
-      this.classList.add('zoom-out');
-      setTimeout(() => {
-        window.location.href = url;
-      }, 300); // match the CSS duration
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.zoom-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = this.href;
+        this.classList.add('zoom-out');
+        setTimeout(() => {
+          window.location.href = url;
+        }, 300); // match the CSS duration
+      });
     });
   });
 </script>
@@ -39,7 +41,7 @@
   <section class="hero">
     <div class="container">
       <h2>Hi, I'm Shimon Jacobs</h2>
-      <p>I'm a graduate engineer, with an MSc in Rototics and AI.</p>
+      <p>I'm a graduate engineer, with an MSc in Robotics and AI.</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
@@ -70,7 +72,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h3>Contact</h3>
-      <p>Email me at <a href="mailto:you@example.com">shimonjacobs12@gmail.com</a></p>
+      <p>Email me at <a href="mailto:shimonjacobs12@gmail.com">shimonjacobs12@gmail.com</a></p>
     </div>
   </section>
 
